@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>781</width>
+    <height>685</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>791</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Partie normale
+Chaque joueur possède 4 Pion et un Roi assis sur son trône, votre objectif: éliminer le Roi adverse ou prendre 
+possession de son château en asseyant votre Roi sur le trône adverse lorsqu'il est inoccupé.
+ 
+Pour vous déplacer, il faut se servir de Cartes. Il y a 5 Cartes de déplacement dans une partie, chaque joueur 
+en possède 2 et une 5e est placée au milieu du plateau. 
+-Sélectionnez votre Carte
+-Sélectionnez la pièce que vous désirez déplacer  
+-Choisissez un déplacement permis par votre carte
+-Une fois que votre Carte est jouée elle sera échangée avec la carte au milieu du plateau
+
+Il existe en tout 16 Cartes de déplacements, une fois que les 5 cartes de la partie sont distribuée, aucune 
+autre carte ne peut-être ajoutée. Vous devez donc vous adapter aux possibilités de déplacement définies au début 
+de la partie pour obtenir la victoire !
+
+Esprit du vent
+Ce mode de jeu est conseillé aux personnes maitrisant déjà le mode de jeu Partie Normale. Il reprend les 
+règles de la partie normale en rajoutant une pièce spéciale: l'Esprit du Vent, ainsi que de nouvelle cartes: 
+les Carte de l'Esprit du vent.
+
+L'Esprit du Vent est une pièce qui n'appartient à aucun joueur, elle peut en revanche être déplacée par chacun des 
+deux joueurs avec une Carte de déplacement lors d'un tour. L'Esprit du vent ne peux être éliminé par aucune pièce, 
+aucune pièce ne peut être déplacée sur la case où l'Esprit du vent se situe. Si l'Esprit du vent se déplace sur une 
+case occupée par un Pion, celui-ci échangera sa place avec celui-ci. L'Esprit du Vent est incapable d'être déplacé 
+sur une case occupé par un roi. Les Cartes de l'Esprit du Vent sont des Cartes très puissante qui vous permettent de 
+déplacer l'une de vos pièce et l'Esprit du Vent dans le même tour. Vous pouvez également choisir la puissance de 
+l'Esprit du Vent au début de la partie, plus celui-ci sera puissant, plus les parties seront longues et complexes.
+
+Calme: aucune Carte de l'Esprit du Vent sur le plateau.
+Brise du matin: 1 Carte de l'Esprit du Vent sur le plateau.
+Vent léger: 2 Cartes de l'Esprit du Vent sur le plateau. [Recommandé]
+Tempête: 3 Cartes de l'Esprit du Vent sur le plateau.
+Ouragan: 4 Cartes de l'Esprit du Vent sur le plateau.
+ONITAMA DOIT MOURIR. : uniquement des Cartes de l'Esprit du Vent sur le plateau.
+
+La Voie du Maitre
+Ce mode de jeu spécial reprend les règles d'une partie normale avec 16 nouvelles Cartes de déplacements pour des 
+parties plus imprévisibles.
+</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="closeRules">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>630</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">selection-color: rgba(255, 255, 255, 92);</string>
+    </property>
+    <property name="text">
+     <string>close</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>closeRules</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>510</x>
+     <y>635</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>643</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
